@@ -12,9 +12,9 @@
 
 @section('content')
     <section id="about">
-        <p>Hello, I'm Espiridion Larosa. Full-stack Developer from Philippines. 
-        Currently looking for a new team to be part on. Here, I share what projects I worked on.
-        I will also share everything I know about web development. 
+        <p>
+            Hello, I'm Espiridion Larosa. Full-stack Developer from Philippines. Here, I share what projects I worked on.
+            I will also share everything I know about web development. 
         </p>
         <p>
             Find me on

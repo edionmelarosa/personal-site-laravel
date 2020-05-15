@@ -5,11 +5,5 @@
             <h1>Edion Larosa | Full-stack Developer</h1>
         </div>
     </a>
-    <nav id="nav">
-        <ul>
-            <li>
-                <a href="/">Home</a>                            
-            </li>
-        </ul>
-    </nav>
+    @include('sections.nav')
 </header>
