@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('meta-tags')
+    <title>Espiridion Larosa is a Full-stack developer from Philippines</title>
     <meta name="description" content="Espiridion Larosa is a Full-stack developer from Philippines" />
     <meta name="keywords" content="dev, laravel, laravel-dev, Full-stack, php" />
 

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('meta-tags')
+    <title>{{$blog->title}}</title>
     <meta name="description" content="{{$blog->description}}" />
     <meta name="keywords" content="{{$blog->keywords}}" />
 
