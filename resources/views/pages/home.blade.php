@@ -6,7 +6,6 @@
 
     <meta property="og:title" content="Espiridion Larosa" />
     <meta property="og:description" content="Espiridion Larosa is a Full-stack developer from Philippines" />
-    <meta property="og:image" content="LINK TO THE IMAGE FILE" />
     <meta property="og:url" content="https://edionme.com" />
 @endsection
 
