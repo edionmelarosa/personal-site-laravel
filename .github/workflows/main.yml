@@ -55,6 +55,7 @@ jobs:
           script: |
             cp ~/edionme.com/.env /var/www/edionme.com/.env
             cd /var/www/edionme.com
-            composer install --no-dev
+            composer install --optimize-autoloader --no-dev
+            php artisan config:cache
             php artisan view:cache
             php artisan route:cache
