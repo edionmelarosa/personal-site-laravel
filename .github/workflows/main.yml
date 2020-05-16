@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    
     - name: copy file via ssh password
       uses: appleboy/scp-action@master
       with:
@@ -19,7 +20,7 @@ jobs:
         overwrite: true
         source: "./*"
         target: "/var/www/testing"
-    steps:
+
     - name: Executing remote ssh commands
       uses: appleboy/ssh-action@master
       with:
