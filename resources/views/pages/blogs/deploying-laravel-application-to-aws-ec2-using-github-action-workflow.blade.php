@@ -168,7 +168,7 @@ jobs:
 <p>If everything is set up properly, you will see this.</p>
 <img 
     src="{{url('assets/img/github-deploy-to-server-with-action-and-workflows/github-actions-successful-workflow.jpg')}}" 
-    alt="Github settings secrets"
+    alt="Github successful workflow"
 >
 <hr>
 

@@ -8,6 +8,11 @@
     <meta property="og:title" content="Espiridion Larosa" />
     <meta property="og:description" content="Espiridion Larosa is a Full-stack developer from Philippines" />
     <meta property="og:url" content="https://edionme.com" />
+
+    <meta property="og:url"                content="https://edionme.com" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Espiridion Larosa is a Full-stack developer from Philippines" />
+    <meta property="og:description"        content="Espiridion Larosa is a Full-stack developer from Philippines" />
 @endsection
 
 @section('content')
