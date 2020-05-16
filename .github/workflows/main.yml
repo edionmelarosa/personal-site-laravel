@@ -62,4 +62,4 @@ jobs:
 
             chmod 2775 /var/www/edionme.com
             find /var/www/edionme.com -type d -exec chmod 2775 {} \;
-            find /var/www/edionme.com -type f -exec chmod 0664 {} \
+            find /var/www/edionme.com -type f -exec chmod 0664 {} \;
