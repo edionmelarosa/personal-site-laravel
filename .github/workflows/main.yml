@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    
+
     - name: copy file via ssh password
       uses: appleboy/scp-action@master
       with:
@@ -19,7 +19,7 @@ jobs:
         port: ${{ secrets.PORT }}
         overwrite: true
         source: "./*"
-        target: "/var/www/testing"
+        target: "/var/www/edionme.com"
 
     - name: Executing remote ssh commands
       uses: appleboy/ssh-action@master
@@ -29,7 +29,8 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          cd /var/www/testing
+          cp ~/.edionme.com/.env /var/www/edionme.com/.env
+          cd /var/www/edionme.com
           composer install --no-dev
           php artisan view:cache
           php artisan route:cache
