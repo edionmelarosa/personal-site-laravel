@@ -124,7 +124,7 @@ FOLDER: dist # The folder the action should deploy.
     style="border: 1px solid #ccc;"
 >
 
-<p>If everything setup properly, you will see like this.</p>
+<p>If everything is set up properly, you will see this.</p>
 <img 
     src="{{url('assets/img/github-successfull-deployment.jpg')}}" 
     alt="Github success deployment"

@@ -8,3 +8,8 @@
     </div>
     @include('sections.nav')
 </footer>
+<style>
+    #footer .footer-left a {
+        text-decoration: none;
+    }
+</style>
