@@ -17,3 +17,9 @@
         @endforeach
     </ul>
 </section>
+
+<style>
+    #blogs .section-item {
+        margin-bottom: 15px;
+    }
+</style>
