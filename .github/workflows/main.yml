@@ -8,18 +8,27 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout 🛎️
-      uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+    - uses: actions/checkout@master
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@master
       with:
-        persist-credentials: false
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        overwrite: true
+        source: "./*"
+        target: "/var/www/testing"
+    steps:
     - name: Executing remote ssh commands
-      uses: actions/checkout@v2
+      uses: appleboy/ssh-action@master
       with:
-        persist-credentials: false
-
-    - name: Testing if has data
-      run: |
-        pwd
-        ls -lash
-        sftp ${{ secrets.USERNAME }}@${{ secrets.HOST }}
-        lls
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd /var/www/testing
+          composer install --no-dev
+          php artisan view:cache
+          php artisan route:cache
