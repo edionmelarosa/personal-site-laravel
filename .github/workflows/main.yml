@@ -56,10 +56,10 @@ jobs:
             cp ~/edionme.com/.env /var/www/edionme.com/.env
             cd /var/www/edionme.com
             composer install --optimize-autoloader --no-dev
+            php artisan config:clear
+            php artisan view:clear
+            php artisan route:clear
+
             php artisan config:cache
             php artisan view:cache
             php artisan route:cache
-
-            chmod 2775 /var/www/edionme.com
-            find /var/www/edionme.com -type d -exec chmod 2775 {} \;
-            find /var/www/edionme.com -type f -exec chmod 0664 {} \;
