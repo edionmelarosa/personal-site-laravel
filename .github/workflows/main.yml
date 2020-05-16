@@ -40,20 +40,20 @@ jobs:
         port: ${{ secrets.PORT }}
         overwrite: true
         source: "./*"
-        target: "/var/www/edionme.com"
+        target: "/var/www/edionme.com"  
 
-    configure-laravel:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: appleboy/ssh-action@master
-          with:
-            host: ${{ secrets.HOST }}
-            username: ${{ secrets.USERNAME }}
-            key: ${{ secrets.KEY }}
-            port: ${{ secrets.PORT }}
-            script: |
-              cp ~/edionme.com/.env /var/www/edionme.com/.env
-              cd /var/www/edionme.com
-              composer install --no-dev
-              php artisan view:cache
-              php artisan route:cache
+  configure-laravel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cp ~/edionme.com/.env /var/www/edionme.com/.env
+            cd /var/www/edionme.com
+            composer install --no-dev
+            php artisan view:cache
+            php artisan route:cache
