@@ -129,6 +129,9 @@ jobs:
             php artisan config:cache
             php artisan view:cache
             php artisan route:cache
+            chmod 2775 /var/www/edionme.com
+            find /var/www/edionme.com -type d -exec chmod 2775 {} \;
+            find /var/www/edionme.com -type f -exec chmod 0664 {} \;
 </pre>
     <p><strong>Variables</strong></p>
     <ul>
