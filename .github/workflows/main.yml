@@ -19,4 +19,5 @@ jobs:
 
     - name: Testing if has data
       run: |
+        pwd
         ls -lash
