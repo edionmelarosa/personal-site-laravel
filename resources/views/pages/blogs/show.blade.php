@@ -22,7 +22,7 @@
             <i class="fab fa-facebook" id="share-to-fb-btn"></i>
             |
             <a 
-                href="https://twitter.com/intent/tweet?text={{$blog->title}}&url={{url($blog->slug)}}"
+                href="https://twitter.com/intent/tweet?text={{$blog->title}}&url={{url('blogs/'.$blog->slug)}}"
                 target="_blank"
             >
                 <i class="fab fa-twitter" style="width:0;"></i>
