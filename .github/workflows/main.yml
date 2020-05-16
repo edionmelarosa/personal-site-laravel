@@ -16,5 +16,5 @@ jobs:
       uses: actions/checkout@v2
       with:
         persist-credentials: false
-      - run: |
-        ls -lash
+    - run: |
+      ls -lash
