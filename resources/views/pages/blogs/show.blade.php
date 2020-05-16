@@ -30,8 +30,7 @@
         </div>
     </div>
     <script>
-        var url = "<?php echo url($blog->slug) ?>"
-        console.log(url)
+        var url = "<?php echo url('blogs/'.$blog->slug) ?>"
         document.getElementById('share-to-fb-btn').onclick = function() {
           FB.ui({
             display: 'popup',
