@@ -19,6 +19,17 @@
         <link rel="stylesheet" href="{{url('assets/css/app.css')}}">
     </head>
     <body>
+        <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId            : '236900410872068',
+                autoLogAppEvents : true,
+                xfbml            : true,
+                version          : 'v7.0'
+              });
+            };
+          </script>
+          <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
         <div id="app" class="max-width mx-auto px3">
             <div class="content index my4">
                 @include('sections.header')

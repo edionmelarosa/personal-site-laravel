@@ -15,5 +15,43 @@
 @endsection
 
 @section('content')
-    @include($blog->file_content)
+    <div id="blog">
+        @include($blog->file_content)
+        <div class="share-wrapper">
+            Share to 
+            <i class="fab fa-facebook" id="share-to-fb-btn"></i>
+            |
+            <a 
+                href="https://twitter.com/intent/tweet?text={{$blog->title}}&url={{url($blog->slug)}}"
+                target="_blank"
+            >
+                <i class="fab fa-twitter" style="width:0;"></i>
+            </a>
+        </div>
+    </div>
+    <script>
+        var url = "<?php echo url($blog->slug) ?>"
+        console.log(url)
+        document.getElementById('share-to-fb-btn').onclick = function() {
+          FB.ui({
+            display: 'popup',
+            method: 'share',
+            href: url,
+          }, function(response){});
+        }
+    </script>
+    <style>
+        #blog .share-wrapper {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        #blog .share-wrapper i{
+            cursor: pointer;
+        }
+
+        #blog .share-wrapper a{
+            text-decoration: none;
+        }
+    </style>
 @endsection
