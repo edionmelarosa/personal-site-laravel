@@ -5,7 +5,7 @@
             @php
                 $blog = (object) $blog;
             @endphp
-            <a href="{{url('blogs/'.$blog->slug)}}">
+            <a href="{{url($blog->url)}}">
                 <li class="section-item">
                     {{$blog->title}}
                 <br>

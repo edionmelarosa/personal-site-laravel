@@ -5,9 +5,9 @@
     <meta name="description" content="{{$blog->description}}" />
     <meta property="og:title" content="{{$blog->title}}" />
     <meta property="og:description" content="{{$blog->description}}" />
-    <meta property="og:url" content="{{url('blogs/'.$blog->slug)}}" />
+    <meta property="og:url" content="{{url($blog->url)}}" />
 
-    <meta property="og:url"                content="{{url('blogs/'.$blog->slug)}}" />
+    <meta property="og:url"                content="{{url($blog->url)}}" />
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="{{$blog->title}}" />
     <meta property="og:description"        content="{{$blog->description}}" />
@@ -22,7 +22,7 @@
             <i class="fab fa-facebook" id="share-to-fb-btn"></i>
             |
             <a 
-                href="https://twitter.com/intent/tweet?text={{$blog->title}}&url={{url('blogs/'.$blog->slug)}}"
+                href="https://twitter.com/intent/tweet?text={{$blog->title}}&url={{url($blog->url)}}"
                 target="_blank"
             >
                 <i class="fab fa-twitter" style="width:0;"></i>
@@ -30,7 +30,7 @@
         </div>
     </div>
     <script>
-        var url = "<?php echo url('blogs/'.$blog->slug) ?>"
+        var url = "<?php echo url($blog->url) ?>"
         document.getElementById('share-to-fb-btn').onclick = function() {
           FB.ui({
             display: 'popup',
