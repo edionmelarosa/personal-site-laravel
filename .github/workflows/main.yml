@@ -64,5 +64,5 @@ jobs:
             php artisan view:cache
             php artisan route:cache
 
-            sudo find /var/www/edionme.com -type d -exec chmod 2775 {} \;
-            sudo find /var/www/edionme.com -type f -exec chmod 0664 {} \;
+            #sudo find /var/www/edionme.com -type d -exec chmod 2775 {} \;
+            # sudo find /var/www/edionme.com -type f -exec chmod 0664 {} \;
