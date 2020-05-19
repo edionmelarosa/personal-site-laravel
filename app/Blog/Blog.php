@@ -7,7 +7,7 @@
        private $blogs = [
            'deploying-your-github-page-using-github-action-workflow' => [
                'id'             => 1,
-               'title'          => 'Deploying Github page using Github action and workflows',
+               'title'          => 'Deploy Github page using Github action and workflows',
                'slug'           => 'deploying-your-github-page-using-github-action-workflow',
                'url'            => 'blogs/deploying-your-github-page-using-github-action-workflow',
                'description'    => 'A guide on deploying your github pages using Github action and workflows.',
@@ -17,10 +17,10 @@
             ],
            'deploying-laravel-application-to-aws-ec2-using-github-action-workflow' => [
                'id'             => 2,
-               'title'          => 'Deploying Laravel application to AWS ec2 (work also on other server) using Github action and workflows',
+               'title'          => 'Deploy Laravel application using Github action and workflows',
                'slug'           => 'deploying-laravel-application-to-aws-ec2-using-github-action-workflow',
                'url'            => 'blogs/deploying-laravel-application-to-aws-ec2-using-github-action-workflow',
-               'description'    => 'Deploying Laravel application to AWS ec2 (work also on other server) using Github action and workflows.',
+               'description'    => 'Deploy Laravel application using Github action and workflows.',
                'date_updated'   => 'May 16, 2020',
                'file_content'   => 'pages.blogs.deploying-laravel-application-to-aws-ec2-using-github-action-workflow',
                'featured_image' => 'assets/img/github-deploy-to-server-with-action-and-workflows/github-actions-successful-workflow.jpg'
