@@ -24,6 +24,16 @@
                'date_updated'   => 'May 16, 2020',
                'file_content'   => 'pages.blogs.deploying-laravel-application-to-aws-ec2-using-github-action-workflow',
                'featured_image' => 'assets/img/github-deploy-to-server-with-action-and-workflows/github-actions-successful-workflow.jpg'
+           ],
+           'import-and-parse-large-csv-file-with-php-generator-and-real-example-with-laravel-and-vue' => [
+               'id'             => 3,
+               'title'          => 'Import and process large CSV file with PHP generator with example implementation using Laravel and Vue',
+               'slug'           => 'import-and-parse-large-csv-file-with-php-generator-and-real-example-with-laravel-and-vue',
+               'url'            => 'blogs/import-and-parse-large-csv-file-with-php-generator-and-real-example-with-laravel-and-vue',
+               'description'    => 'Import and process large CSV file with PHP generator with example implementation using Laravel and Vue.',
+               'date_updated'   => 'May 21, 2020',
+               'file_content'   => 'pages.blogs.import-and-parse-large-csv-file-with-php-generator-and-real-example-with-laravel-and-vue',
+               'featured_image' => 'assets/img/process-csv-with-php-generator-laravel-vue/lazy-csv-file-code.jpg'
             ]
        ];
 

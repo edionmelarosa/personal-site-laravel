@@ -17,6 +17,16 @@
         </script>
 
         <link rel="stylesheet" href="{{url('assets/css/app.css')}}">
+        <style>
+           xmp, code, pre {
+              padding: 0 5px;
+              border: 1px dotted #ddd;
+              background-color: #ddd;
+              border-radius: 2px;
+              -webkit-border-radius: 2px;
+              font-size: 13px;
+           }
+        </style>
     </head>
     <body>
         <script>
