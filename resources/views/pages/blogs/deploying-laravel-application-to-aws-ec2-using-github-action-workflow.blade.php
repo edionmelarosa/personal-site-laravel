@@ -44,34 +44,12 @@
     <p>Workflows are stored in <code>.github/workflows/</code> folder.</p>
     <p>Now, create a file inside <code>.github/workflows/</code> called <code>main.yml</code> and paste content below.</p>
 <pre>
-name: Test and deploy
+name: Deploy
 on:
     push:
     branches: [ master ]
 
 jobs:
-    run-phpunit-tests:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Copy .env
-        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
-    - name: Install Dependencies
-        run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
-    - name: Generate key
-        run: php artisan key:generate
-    - name: Directory Permissions
-        run: chmod -R 777 storage bootstrap/cache
-    - name: Create Database
-        run: |
-        mkdir -p database
-        touch database/database.sqlite
-    - name: Execute tests (Unit and Feature tests) via PHPUnit
-        env:
-        DB_CONNECTION: sqlite
-        DB_DATABASE: database/database.sqlite
-        run: vendor/bin/phpunit
-        
     copy-files:
     runs-on: ubuntu-latest
     steps:
@@ -126,20 +104,14 @@ jobs:
             cp ~/edionme.com/.env /var/www/edionme.com/.env
             cd /var/www/edionme.com
             composer install --optimize-autoloader --no-dev
-            php artisan config:clear
-            php artisan view:clear
-            php artisan route:clear
 
-            php artisan config:cache
-            php artisan view:cache
-            php artisan route:cache
+            php artisan optimize
 </pre>
     <p><strong>Variables</strong></p>
     <ul>
         <li><code>name</code> - Workflow name.</li>
         <li><code>on</code> - What event workflow will trigger, here we set to <code>push</code>.</li>
         <li><code>branch</code> - Branch workflow event will trigger.</li>
-        <li><code>jobs</code> - This workflow has 2 jobs <code>tests and deploy</code>.</li>
     </ul>
 
     <p>Refer to Github actions <a href="https://github.com/features/actions" target="_blank">documentation</a> for more information.</p>
@@ -147,9 +119,6 @@ jobs:
     <p><strong>Jobs</strong></p>
 
     <ul>
-        <li>
-            <p><code>tests</code> - Basically just run tests using <code>phpunit</code>.</p>
-        </li>
         <li>
             <p><code>copy-files</code> - Copy files to our server.</p>
             <ul>
