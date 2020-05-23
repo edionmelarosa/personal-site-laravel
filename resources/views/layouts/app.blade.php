@@ -30,9 +30,10 @@
     </head>
     <body>
         <script>
+            var appId = "<?php echo config('social.fb_app_id') ?>"
             window.fbAsyncInit = function() {
               FB.init({
-                appId            : '236900410872068',
+                appId            : appId,
                 autoLogAppEvents : true,
                 xfbml            : true,
                 version          : 'v7.0'
