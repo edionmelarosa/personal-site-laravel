@@ -7,7 +7,7 @@
             @endphp
             <a href="{{url($blog->url)}}" >
                 <div class="shadow-md border-gray-900 bg-white hover:bg-gray-100 hover:shadow-sm my-4 p-5 rounded-lg">
-                    <span class="font-semibold text-3xl block">{{$blog->title}}</span>
+                    <span class="font-semibold text-2xl block">{{$blog->title}}</span>
                     <span class="text-xl mb-4 block">{{$blog->description}}</span>
                     <small class="font-thin font-xl font-gray-600 block">Updated: {{$blog->date_updated}}</small>
                 </div>
