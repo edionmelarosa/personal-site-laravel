@@ -9,26 +9,17 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166822513-1"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-        gtag('config', 'UA-166822513-1');
+          gtag('config', <?php echo config('social.gogle_tag') ?>);
         </script>
 
-        <link rel="stylesheet" href="{{url('assets/css/app.css')}}">
-        <style>
-           xmp, code, pre {
-              padding: 0 5px;
-              border: 1px dotted #ddd;
-              background-color: #ddd;
-              border-radius: 2px;
-              -webkit-border-radius: 2px;
-              font-size: 13px;
-           }
-        </style>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="{{mix('css/app.css')}}">
     </head>
-    <body>
+    <body class="font-body bg-gray-200 text-gray-800 text-xl">
         <script>
             window.fbAsyncInit = function() {
               FB.init({
@@ -40,12 +31,14 @@
             };
           </script>
           <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
-        <div id="app" class="max-width mx-auto px3">
-            <div class="content index my4">
-                @include('sections.header')
-                @yield('content')
-            </div> 
+          <div id="app" class="">
+            @include('sections.header')
+            <div class="px-10 max-w-6xl m-auto pt-20 ">
+              @yield('content')
+            </div>
             @include('sections.footer')
         </div>
     </body>
+    <script src="{{mix('js/app.js')}}">
+    <script>hljs.initHighlightingOnLoad();</script>
 </html>

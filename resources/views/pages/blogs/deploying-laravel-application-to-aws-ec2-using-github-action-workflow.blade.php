@@ -1,16 +1,14 @@
 <div class="introduction">
-    <h2>Deploying your Laravel Application to AWS ec2 instance or any other server with Github Action and Workflows</h2>
-
+    <h1>Deploying your Laravel Application to AWS ec2 instance or any other server with Github Action and Workflows</h1>
     <p>In this post I am going to explain how to deploy Laravel Application to AWS ec2 instance using Github Action and Workflows.</p>
 
-    <p>After completing this guide, you should be able to:</p>
+    <h2 class="mt-10">After completing this guide, you should be able to:</h2>
     <ul>
         <li>Deploy Laravel Application to AWS ec2 instance on push</li>
         <li>Run test cases of your Laravel Application</li>
     </ul>
 
-    <hr>
-    <p><strong>Prerequisites</strong>:</p>
+    <h2 class="mt-10">Prerequisites</h2>
     <ul>
         <li>You have running AWS ec2 instance or other running server.</li>
         <li>SSH access to server.</li>
@@ -19,20 +17,17 @@
         <li>Have a copy of  <code>.env</code> somewhere in your server. We will use it later.</li>
     </ul>
 
-    <hr>
-    <p><strong>Disclaimer</strong></p>
+    <h2 class="mt-10">Disclaimer</h2>
     <p>I am not an expert of DevOps. This guide is not meant for big and complex systems.</p>
     <p>This may not work on your application. And if you have a better solution how to do it. 
         Please reach me.</p>
-    <hr>
 
-    <h2>Before we start, we need to do the following:</h2>
+    <h2 class="mt-10">Before we start, we need to do the following:</h2>
     <p>Create the following <code>secret</code> environment.</p>
     <img 
         src="{{url('assets/img/github-deploy-to-server-with-action-and-workflows/github-repo-secrers-env.jpg')}}" 
         alt="Github settings secrets"
     >
-
     <ul>
         <li><code>HOST</code> - Your server host e.g edionme.com.</li>
         <li><code>KEY</code> - Your public key.</li>
@@ -40,10 +35,11 @@
         <li><code>USERNAME</code> - Your server username.</li>
     </ul>
 
-    <h2>Creating a workflow</h2>
+    <h2 class="my-10">Creating a workflow</h2>
     <p>Workflows are stored in <code>.github/workflows/</code> folder.</p>
     <p>Now, create a file inside <code>.github/workflows/</code> called <code>main.yml</code> and paste content below.</p>
 <pre>
+<code>
 name: Deploy
 on:
     push:
@@ -106,18 +102,18 @@ jobs:
             composer install --optimize-autoloader --no-dev
 
             php artisan optimize
+
+    </code>
 </pre>
-    <p><strong>Variables</strong></p>
+    <h2 class="mt-10">Variables</h2>
     <ul>
         <li><code>name</code> - Workflow name.</li>
         <li><code>on</code> - What event workflow will trigger, here we set to <code>push</code>.</li>
         <li><code>branch</code> - Branch workflow event will trigger.</li>
     </ul>
-
     <p>Refer to Github actions <a href="https://github.com/features/actions" target="_blank">documentation</a> for more information.</p>
 
-    <p><strong>Jobs</strong></p>
-
+    <h2 class="mt-10">Jobs</h2>
     <ul>
         <li>
             <p><code>copy-files</code> - Copy files to our server.</p>
@@ -133,19 +129,11 @@ jobs:
         </li>
     </ul>
 </div>
-<p>All Done! Try to push now using <code>master</code> branch (or your choice of branch) and see in Actions.</p>
 
-<p>If everything is set up properly, you will see this.</p>
+<p class="my-10">All Done! Try to push now using <code>master</code> branch (or your choice of branch) and see in Actions.</p>
+
+<p>If everything is set up properly, you should see this.</p>
 <img 
     src="{{url('assets/img/github-deploy-to-server-with-action-and-workflows/github-actions-successful-workflow.jpg')}}" 
     alt="Github successful workflow"
 >
-<hr>
-
-
-<style>
-    img {
-        max-width: 800px;
-        border: 1px solid #ddd;
-    }
-</style>

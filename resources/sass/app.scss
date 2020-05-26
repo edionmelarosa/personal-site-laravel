@@ -1,1 +1,9 @@
-//
+@import '~highlight.js/styles/solarized-dark.css';
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+// custom styling
+@import './custom-styling';
+
+@import "tailwindcss/utilities";

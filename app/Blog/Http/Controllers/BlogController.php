@@ -3,24 +3,12 @@
 namespace App\Blog\Http\Controllers;
 
 use App\Blog\Blog;
-use App\Http\Controllers\Controller;
 
-class BlogController extends Controller
+class BlogController
 {
-    protected $blog;
-
-    public function __construct(Blog $blog) {
-        $this->blog = $blog;
-    }
-
-    public function index()
+    function __invoke($slug)
     {
-        return view('pages.blogs', $this->blog->all());
-    }
-
-    public function show($slug)
-    {
-        $blog = $this->blog->getBySlug($slug);
+        $blog = Blog::getBySlug($slug);
 
         if(!$blog) {
             return abort(404);

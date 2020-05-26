@@ -1,0 +1,35 @@
+.link {
+    @apply text-blue-600;
+}
+
+p {
+    @apply leading-10;
+}
+
+h1 {
+    @apply font-bold text-4xl mb-4;
+}
+
+h2 {
+    @apply font-semibold text-2xl;
+}
+
+ul {
+    @apply list-disc px-12;
+
+    li {
+        @apply py-2;
+    }
+}
+
+.hljs {
+    @apply rounded-md text-white text-sm bg-gray-900;
+}
+
+img {
+    @apply rounded-md;
+}
+
+.code-highlight, code {
+    @apply text-sm bg-gray-800 text-white p-2 rounded-sm;
+}

@@ -1,32 +1,30 @@
 <div class="introduction">
-    <h2>How to import and parse large CSV file using a PHP generator with Actual implementation example using Laravel and VueJs.</h2>
-
+    <h1>How to import and parse large CSV file using a PHP generator with Actual implementation example using Laravel and VueJs.</h1>
     <p>There are a lot of articles about how to import and save data into database but no one shares about implementing PHP generator.</p>
     <p>That's why I decided to publish this article.</p>
     <p>If you have no idea what PHP generator is. See <a href="https://www.php.net/manual/en/language.generators.overview.php" target="_blank">PHP Manual</a>.</p>
-
-    <hr>
-
     <p>I have created a function which you can find <a href="https://gist.github.com/edionmelarosa/46a0799e3f3618beeae1bda389f85ee5" target="_blank">here</a>.</p>
 </div>
 
-<div class="main-content">
-    
-    <p><strong>Using the function.</strong></p>
+<div class="main-content mt-10">
+    <h2>Using the function.</h2>
     <p>If you're using Laravel or your application uses <code>composer</code>. Save the file somewhere in your application. Then, autoload it from your <code>composer.json</code>.</p>
-    <pre>
+<pre>
+<code class="json">
 "autoload": {
     "files": [
         "path/to/functions.php"
     ]
 }
-    </pre>
+</code>
+</pre>
 
-    <p>Make sure to run <code>composer dumpautoload</code> to reload your autoloaded files.</p>
+<p>Make sure to run <code>composer dumpautoload</code> to reload your autoloaded files.</p>
 
-    <p><strong>How the function work</strong></p>
+<h2 class="mt-10">How the function work</h2>
 
-    <pre>
+<pre>
+<code lang="php">
 /**
 * Reads entire csv file into a generator
 * 
@@ -54,21 +52,21 @@ function lazy_csv_file($path, $skipFirstRow=false)
         throw new Exception($th);
     }
 }
-    </pre>
+</code>
+</pre>
 
-    <p>It accepts two <code>parameters</code>.</p>
-    <ul>
-        <li><code>$path</code> - path to your file.</li>
-        <li><code>$skipFirstRow</code> - skip first row(usually header text). default to <code>false</code>.</li>
-    </ul>
+<p>It accepts two <code>parameters</code>.</p>
+<ul>
+    <li><code>$path</code> - path to your file.</li>
+    <li><code>$skipFirstRow</code> - skip first row(usually header text). default to <code>false</code>.</li>
+</ul>
+<p>Now, look at how it handle the data. Instead of putting it inside an array variable or processing directly, it <code>yield</code> and output.</p>
+<p>This is very useful when parsing large datasets.</p>
 
-    <p>Now, look at how it handle the data. Instead of putting it inside an array variable or processing directly, it <code>yield</code> and output.</p>
-    <p>This is very useful when parsing large datasets.</p>
+<h2 class="my-10">Practical implementation using Laravel and Vue</h2>
+<p>From your Vue component, you might have:</p>
 
-    <p><strong>Practical implementation using Laravel and Vue</strong></p>
-    <p>From your Vue component, you might have:</p>
-
-    <xmp>
+<xmp class="hljs text-2xl">
 <template>
     <label>Upload CSV File</label>
     <input 
@@ -81,7 +79,9 @@ function lazy_csv_file($path, $skipFirstRow=false)
     >
     <button class="btn" @click.prevent="submit"></button>
 </template>
-<script>
+</xmp>
+<pre>
+<code class="javascript">
 export default {
     data(){
         return {
@@ -103,12 +103,13 @@ export default {
         }
     }    
 }
-</script>
-    </xmp>
+</code>
+</pre>
 
-    <p>In your Controller, you might have:</p>
+<h2 class="mt-10">In your Controller, you might have</h2>
 
-    <xmp>
+<pre>
+<code class="php">
 public function handleFileUpload(Request $request)
 {
     $attributes = validator($request->all(), [
@@ -122,6 +123,6 @@ public function handleFileUpload(Request $request)
         // Handle you data here...
     }
 }
-    </xmp>
+</code>
+</pre>
 </div>
-<hr>

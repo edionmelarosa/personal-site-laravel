@@ -17,15 +17,16 @@
 @section('content')
     <div id="blog">
         @include($blog->file_content)
-        <div class="share-wrapper">
-            Share to 
-            <i class="fab fa-facebook" id="share-to-fb-btn"></i>
-            |
+        <div class="mt-10 text-xl">
+            <span>You like it? share to</span>
+            <a href="#" id="share-to-fb-btn" class="link">Facebook</a>
+            or
             <a 
+                class="link"
                 href="https://twitter.com/intent/tweet?text={{$blog->title}}&url={{url($blog->url)}}"
                 target="_blank"
             >
-                <i class="fab fa-twitter" style="width:0;"></i>
+                Twitter
             </a>
         </div>
     </div>
@@ -40,17 +41,10 @@
         }
     </script>
     <style>
-        #blog .share-wrapper {
-            color: #666;
-            font-size: 1rem;
-        }
-
-        #blog .share-wrapper i{
-            cursor: pointer;
-        }
-
-        #blog .share-wrapper a{
-            text-decoration: none;
+        p {
+            @apply {
+                leading-10;
+            }
         }
     </style>
 @endsection
