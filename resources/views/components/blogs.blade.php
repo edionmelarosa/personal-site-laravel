@@ -5,7 +5,7 @@
             @php
                 $blog = (object) $blog;
             @endphp
-            <a href="{{url($blog->url)}}" >
+            <a class="text-gray-800" href="{{url($blog->url)}}">
                 <div class="shadow-md border-gray-900 bg-white hover:bg-gray-100 hover:shadow-sm my-4 p-5 rounded-lg">
                     <span class="font-semibold text-2xl block">{{$blog->title}}</span>
                     <span class="text-xl mb-4 block">{{$blog->description}}</span>

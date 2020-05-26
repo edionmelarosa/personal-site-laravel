@@ -3,7 +3,7 @@
         <div class="logo w-1/2">
             <a href="/">
                 <img class="rounded-full float-left mr-6" src="{{url('assets/img/edion-profile.png')}}" alt="Photo of Espiridion Larosa" style="width: 64px;">
-                <h1 class="text-xl text-2xl font-bold text-gray-800">Espiridion Larosa Jr. 
+                <h1 class="text-xl text-2xl font-bold text-gray-800 hover:text-blue-800">Espiridion Larosa Jr. 
                     <span class="text-xl text-gray-700 block font-hairline font-semibold">Full-stack developer</span>
                 </h1>
             </a>

@@ -1,5 +1,9 @@
-.link {
+.link, a {
     @apply text-blue-600;
+
+    &:hover {
+        @apply text-gray-800;
+    }
 }
 
 p {
