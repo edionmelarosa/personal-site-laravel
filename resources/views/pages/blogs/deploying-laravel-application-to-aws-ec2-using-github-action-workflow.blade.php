@@ -25,7 +25,7 @@
     <h2 class="mt-10">Before we start, we need to do the following:</h2>
     <p>Create the following <code>secret</code> environment.</p>
     <img 
-        src="{{url('assets/img/github-deploy-to-server-with-action-and-workflows/github-repo-secrers-env.jpg')}}" 
+        src="/assets/img/github-deploy-to-server-with-action-and-workflows/github-repo-secrers-env.jpg" 
         alt="Github settings secrets"
     >
     <ul>
@@ -134,6 +134,6 @@ jobs:
 
 <p>If everything is set up properly, you should see this.</p>
 <img 
-    src="{{url('assets/img/github-deploy-to-server-with-action-and-workflows/github-actions-successful-workflow.jpg')}}" 
+    src="/assets/img/github-deploy-to-server-with-action-and-workflows/github-actions-successful-workflow.jpg" 
     alt="Github successful workflow"
 >

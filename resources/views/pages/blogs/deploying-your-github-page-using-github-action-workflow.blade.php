@@ -24,7 +24,7 @@
             Click <strong>Settings</strong> tab and scroll down to <strong>Github Pages</strong> section.
             <img 
                 class="mt-2"
-                src="{{url('assets/img/github-pages-deployment-branch.jpg')}}" 
+                src="/assets/img/github-pages-deployment-branch.jpg" 
                 alt="Github pages deployment branch"
             >
         </li>
@@ -36,7 +36,7 @@
             Name your key as <code>DEPLOY_KEY</code> and paste in your <code>private key</code>.
             <img 
             class="mt-2"
-                src="{{url('assets/img/github-settings-secret-deployment-key.jpg')}}" 
+                src="/assets/img/github-settings-secret-deployment-key.jpg" 
                 alt="Github settings secrets"
             >
         </li>
@@ -126,14 +126,14 @@ jobs:
 
 <p class="my-10">All Done! Try to push now using <code>master</code> branch and see in Actions.</p>
 <img 
-    src="{{url('assets/img/github-all-workflows.jpg')}}" 
+    src="/assets/img/github-all-workflows.jpg" 
     alt="Github all workflows"
     style="border: 1px solid #ccc;"
 >
 
 <p class="my-10">If everything is set up properly, you will see this.</p>
 <img 
-    src="{{url('assets/img/github-successfull-deployment.jpg')}}" 
+    src="/assets/img/github-successfull-deployment.jpg" 
     alt="Github success deployment"
     style="border: 1px solid #ccc;"
 >

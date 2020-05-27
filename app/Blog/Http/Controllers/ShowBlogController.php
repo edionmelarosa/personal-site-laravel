@@ -2,16 +2,16 @@
 
 namespace App\Blog\Http\Controllers;
 
-use App\Blog\Blog;
+use Wink\WinkPost;
 
-class BlogController
+class ShowBlogController
 {
     function __invoke($slug)
     {
-        $blog = Blog::getBySlug($slug);
-
-        if(!$blog) {
-            return abort(404);
+        $blog = WinkPost::findBySlug($slug);
+       
+        if (!$blog) {
+            abort(404);
         }
 
         return view('pages.blogs.show', compact('blog'));
