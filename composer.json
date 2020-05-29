@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
-        "themsaid/wink": "*@dev"
+        "themsaid/wink": "dev-patches"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -25,8 +25,8 @@
         "phpunit/phpunit": "^9.0"
     },
     "config": {
-        "optimize-autoloader": true,
         "preferred-install": "dist",
+        "optimize-autoloader": true,
         "sort-packages": true
     },
     "extra": {
@@ -64,11 +64,8 @@
     },
     "repositories": [
         {
-            "type": "path",
-            "url": "./packages/wink",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "git@github.com:edionmelarosa/wink.git"
         }
     ]
 }
