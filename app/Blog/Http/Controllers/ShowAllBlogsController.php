@@ -2,13 +2,13 @@
 
 namespace App\Blog\Http\Controllers;
 
-use Wink\WinkPost;
+use App\Blog\Blog;
 
 class ShowAllBlogsController
 {
     function __invoke()
     {
-        $blogs = WinkPost::all();
+        $blogs = Blog::all();
         
         return view('pages.blogs.all', compact('blogs'));
     }
