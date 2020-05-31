@@ -36,3 +36,6 @@ jobs:
             composer install --optimize-autoloader --no-dev
 
             php artisan optimize
+
+            sudo find /var/www/edionme.com -type d -exec chmod 2775 {} \;
+            sudo find /var/www/edionme.com -type f -exec chmod 0664 {} \;
