@@ -6,10 +6,10 @@ use Wink\WinkPost;
 
 class ShowAllBlogsController
 {
-    function __invoke($slug)
+    function __invoke()
     {
         $blogs = WinkPost::all();
         
-        return view('pages.blogs', compact('blogs'));
+        return view('pages.blogs.all', compact('blogs'));
     }
 }

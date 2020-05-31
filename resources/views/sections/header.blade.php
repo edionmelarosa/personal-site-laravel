@@ -10,7 +10,7 @@
                 </div>
             </a>
         </div>
-        <div class="pt-2 text-right w-1/2">
+        <div class="pt-2 text-right w-1/3">
             @include('sections.nav')
         </div>
     </div>

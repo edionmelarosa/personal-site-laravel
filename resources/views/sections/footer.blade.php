@@ -2,8 +2,10 @@
     <div class="max-w-md  m-auto">
         <p>Built with
             <a class="link" href="https://laravel.com" target="_blank">Laravel</a>
-            and
+            ,
             <a class="link" href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>
+            and
+            <a class="link" href="https://github.com/themsaid/wink" target="_blank">Wink</a>.
         </p>
     </div>
 </footer>
