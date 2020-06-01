@@ -1,28 +1,19 @@
 <?php
 
-namespace Tests\Unit;
-
 use App\Blog\Blog;
-use PHPUnit\Framework\TestCase;
+use Wink\WinkPost;
+use Illuminate\Support\Facades\Cache;
 
-class BlogTest extends TestCase
-{
-    /** @test */
-    public function show_be_able_to_get_all_blogs()
-    {
-        $blogs = Blog::all();
+it('should pull blogs from cache', function () {
+    Cache::shouldReceive('rememberForever')
+        ->with('blog-all', Closure::class)
+        ->andReturn([]);
+});
 
-        $this->assertIsArray($blogs);
-    }
+it('it should pull single blog from cache', function () {
+    $post = factory(WinkPost::class)->create();
 
-    /** @test */
-    public function show_be_able_to_get_blog_by_slug()
-    {
-        $slug = 'deploying-your-github-page-using-github-action-workflow';
-
-        $blog = Blog::getBySlug($slug);
-
-        $this->assertEquals($slug, $blog->slug);
-    }
-    
-}
+    Cache::shouldReceive('rememberForever')
+        ->with(Blog::$cachePrefix . $post->slug, Closure::class)
+        ->andReturn($post);
+});

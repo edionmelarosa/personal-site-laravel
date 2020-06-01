@@ -1,9 +1,4 @@
 <?php
 
 uses(Tests\TestCase::class)->in('Feature');
-
-it('it assert to true')->assertTrue(true);
-
-test('', function(){
-    assert
-});
+uses(Tests\TestCase::class)->in('Unit');

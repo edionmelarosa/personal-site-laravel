@@ -15,4 +15,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', HomeController::class);
-// Route::view('/test', 'pages.test');
