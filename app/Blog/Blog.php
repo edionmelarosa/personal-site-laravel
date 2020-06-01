@@ -16,8 +16,23 @@ class Blog
 
     public static function all()
     {
-        return Cache::rememberForever(Blog::$cachePrefix.'all', function ()  {
+        if (!config('cache.enabled')) {
             return WinkPost::all();
+        }
+
+        return Cache::rememberForever(Blog::$cachePrefix . 'all', function () {
+            return WinkPost::all();
+        });
+    }
+
+    public static function getBySlug($slug)
+    {
+        if (!config('cache.enabled')) {
+            return WinkPost::findBySlug($slug);
+        }
+
+        return Cache::rememberForever(Blog::$cachePrefix . $slug, function () use ($slug) {
+            return WinkPost::findBySlug($slug);
         });
     }
 }

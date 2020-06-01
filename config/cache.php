@@ -101,4 +101,6 @@ return [
 
     'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache'),
 
+    'enabled' => env('CACHE_ENABLED', false),
+
 ];
