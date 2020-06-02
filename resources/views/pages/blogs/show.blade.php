@@ -23,11 +23,9 @@
             <span>You like it? share to</span>
             <a href="#" id="share-to-fb-btn" class="link">Facebook</a>
             or
-            <a 
-                class="link"
+            <a class="link"
                 href="https://twitter.com/intent/tweet?text={{$blog->title}}&url={{url(\App\Blog\Blog::blogUrl($blog->slug))}}"
-                target="_blank"
-            >
+                target="_blank">
                 Twitter
             </a>
         </div>

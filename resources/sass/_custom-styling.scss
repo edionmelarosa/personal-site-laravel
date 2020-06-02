@@ -37,3 +37,15 @@ img {
 .code-highlight, code {
     @apply text-sm bg-gray-800 text-white p-2 rounded-sm;
 }
+
+#nav {
+    ul {
+        li {
+            @apply mr-4 text-sm font-bold list-none;
+
+            a {
+                @apply text-gray-800;
+            }
+        }
+    }
+}

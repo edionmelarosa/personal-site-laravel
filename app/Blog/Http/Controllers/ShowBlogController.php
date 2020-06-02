@@ -6,7 +6,7 @@ use App\Blog\Blog;
 
 class ShowBlogController
 {
-    function __invoke($slug)
+    public function __invoke($slug)
     {
         $blog = Blog::getBySlug($slug);
 

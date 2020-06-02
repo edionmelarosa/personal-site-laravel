@@ -1,0 +1,19 @@
+#resume {
+    ul {
+        list-style: circle;
+        li {
+            padding: 0;
+            @apply text-base;
+        }
+    }
+
+    p {
+        @apply text-base;
+    }
+
+    h2 {
+        span {
+            background: #002b36;
+        }
+    }
+}
