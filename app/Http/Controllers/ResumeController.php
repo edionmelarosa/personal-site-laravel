@@ -92,11 +92,11 @@ class ResumeController
         $data['online_accounts'] = [
             [
                 'name' => 'Github',
-                'link' => 'www.github.com/edionmelarosa'
+                'link' => 'https://github.com/edionmelarosa'
             ],
             [
                 'name' => 'LinkedIn',
-                'link' => 'www.linkedin.com/in/espiridion-larosa-2a1316a3'
+                'link' => 'https://www.linkedin.com/in/espiridion-larosa-2a1316a3'
             ],
             [
                 'name' => 'Twitter',
@@ -142,7 +142,7 @@ class ResumeController
             ],
             [
                 'name'        => 'Lucky App',
-                'link'        => 'https://demo.addin.com.ph/auth',
+                'link'        => 'https://polai.xgaminghub.com/',
                 'description' => 'Online dashboard for local gaming platform'
             ]
         ];

@@ -55,7 +55,7 @@
                             <p class="mt-2 mb-2 leading-6">
                                 <strong class="block">{{$project['name']}}
                                     (<a href="{{$project['link']}}" 
-                                        type="_blank"
+                                        target="_blank"
                                         class="text-sm">visit</a>)
                                 </strong>
                                 {{$project['description']}}
@@ -99,7 +99,7 @@
                             <p class="mt-2 mb-2 leading-6">
                                 <strong class="block">{{$organization['name']}}
                                     (<a href="{{$organization['link']}}" 
-                                        type="_blank"
+                                        target="_blank"
                                         class="text-sm">visit</a>)
                                 </strong>
                                 {{$organization['description']}}
