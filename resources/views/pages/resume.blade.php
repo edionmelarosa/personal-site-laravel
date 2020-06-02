@@ -26,9 +26,9 @@
                 </small>
             @endforeach
         </div>
-        <div class="content m-auto">
-            <div class="flex">
-                <div class="w-1/2">
+        <div class="content">
+            <div class="md:flex">
+                <div class="m-auto">
                     <div class="work-experiences">
                         <h2 class="mb-3">
                             <span class="text-white rounded p-1 text-base">Work Experiences</span>
@@ -64,7 +64,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="w-1/2">
+                <div class="w-auto">
                     <div class="stacks mb-5">
                         <h2 class="mb-5">
                             <span class="text-white rounded p-1 text-base">Stacks</span>
