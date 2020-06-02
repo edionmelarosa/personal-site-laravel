@@ -110,7 +110,8 @@ class ResumeController
             'Frameworks' => 'Laravel,Symfony(limited knowledge)',
             'CMS'        => 'WordPress',
             'Database'   => 'MySQL, MongoDB(limited knowledge)',
-            'DevOps'     => 'Linux server environment, AWS(limited knowledge), Cpanel, Git, Nginx'
+            'DevOps'     => 'Linux server environment, AWS(limited knowledge), Cpanel, Git, Nginx',
+            'Testing'    => 'PHPUnit, PestPHP'
         ];
 
         $data['talks'] = [
