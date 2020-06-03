@@ -28,7 +28,7 @@
         </div>
         <div class="content">
             <div class="md:flex">
-                <div class="m-auto">
+                <div class="w-auto">
                     <div class="work-experiences">
                         <h2 class="mb-3">
                             <span class="text-white rounded p-1 text-base">Work Experiences</span>
