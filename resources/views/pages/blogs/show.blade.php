@@ -10,7 +10,7 @@
     <meta property="og:url"                content="{{url(\App\Blog\Blog::blogUrl($blog->slug))}}" />
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="{{$blog->title ?? ''}}" />
-    <meta property="og:description"        content="{{$blog->description ?? ''}}" />
+    <meta property="og:description"        content="{{$blog->excerpt ?? ''}}" />
     @if ($blog->featured_image)
         <meta property="og:image"              content="{{url($blog->featured_image)}}" />
     @endif
