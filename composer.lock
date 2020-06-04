@@ -4061,12 +4061,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/edionmelarosa/wink.git",
-                "reference": "07a6541ebab551ae437b0afcbb8144880aeb07d6"
+                "reference": "8d6688b1b78f7f038136716b0c1e958ae1a06ba6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/edionmelarosa/wink/zipball/07a6541ebab551ae437b0afcbb8144880aeb07d6",
-                "reference": "07a6541ebab551ae437b0afcbb8144880aeb07d6",
+                "url": "https://api.github.com/repos/edionmelarosa/wink/zipball/8d6688b1b78f7f038136716b0c1e958ae1a06ba6",
+                "reference": "8d6688b1b78f7f038136716b0c1e958ae1a06ba6",
                 "shasum": ""
             },
             "require": {
@@ -4108,9 +4108,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/edionmelarosa/wink/tree/1.x"
+                "source": "https://github.com/edionmelarosa/wink/tree/patches"
             },
-            "time": "2020-05-29T12:31:14+00:00"
+            "time": "2020-05-31T08:41:50+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
