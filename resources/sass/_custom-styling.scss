@@ -10,12 +10,20 @@ p {
     @apply leading-10;
 }
 
+strong {
+    @apply my-6;
+}
+
 h1 {
     @apply font-bold text-4xl mb-4;
 }
 
 h2 {
-    @apply font-semibold text-2xl;
+    @apply my-10 font-semibold text-2xl;
+}
+
+h3 {
+    @apply font-semibold my-5;
 }
 
 ul {
