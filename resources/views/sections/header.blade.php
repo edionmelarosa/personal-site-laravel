@@ -1,4 +1,4 @@
-<header id="header" class="shadow-xl py-3 bg-white">
+<header id="header" class="shadow-sm border-b-2 py-3 bg-white">
     <div class="flex pt-2 px-10 max-w-6xl m-auto">
         <div class="logo w-3/4">
             <a href="/">

@@ -3,6 +3,8 @@
     <head>
         <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://edionme.com" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:site_name" content="edionme.com" />
         @yield('meta-tags')
 
@@ -19,7 +21,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
         <link rel="stylesheet" href="{{mix('css/app.css')}}">
     </head>
-    <body class="font-body bg-gray-200 text-gray-800 text-xl">
+    <body class="font-body bg-gray-100 text-gray-800 text-2xl md:text-xl">
         <script>
             window.fbAsyncInit = function() {
               FB.init({
