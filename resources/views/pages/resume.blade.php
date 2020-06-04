@@ -18,7 +18,7 @@
 @section('content')
     <section id="resume">
         <div class="mb-10 header">
-            <h2>{{$data->general_information['name']}}</h2>
+            <h1>{{$data->general_information['name']}}</h1>
             <p class="text-base">{{$data->general_information['expertise']}}</p>
             @foreach ($data->online_accounts as $key => $onlineAccount)
                 <small class="text-sm font-bold">

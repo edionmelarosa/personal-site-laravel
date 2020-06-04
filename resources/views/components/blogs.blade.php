@@ -1,6 +1,6 @@
 <h1 class="font-bold text-4xl mb-10">Blogs</h1>
 <div id="blogs" class="md:flex">
-    <div class="personal-blogs pr-10">
+    <div class="personal-blogs md:mr-10 sm:mr-0">
         <p>Here are the latest blogs I have written.</p>
         <section class="my-3">
             <div class="blogs-wrapper">
@@ -21,7 +21,7 @@
         </section>
     </div>
 
-    <div class="recently-read-blogs">
+    <div class="recently-read-blogs mt-10 md:mt-0">
         <p>Blogs I like to read.</p>
         <section class="my-3">
             <div class="blogs-wrapper">

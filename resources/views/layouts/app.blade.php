@@ -35,7 +35,7 @@
           <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
           <div id="app" class="">
             @include('sections.header')
-            <div class="px-10 max-w-6xl m-auto pt-20 ">
+            <div class="px-6 md:px-10 max-w-6xl m-auto pt-20 ">
               @yield('content')
             </div>
             @include('sections.footer')
