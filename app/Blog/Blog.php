@@ -17,11 +17,13 @@ class Blog
     public static function all()
     {
         if (!config('cache.enabled')) {
-            return WinkPost::all();
+            return WinkPost::all()
+                ->sortByDesc('created_at');
         }
 
         return Cache::rememberForever(Blog::$cachePrefix . 'all', function () {
-            return WinkPost::all();
+            return WinkPost::all()
+                ->sortByDesc('created_at');
         });
     }
 

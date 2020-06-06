@@ -17,17 +17,21 @@
 @endsection
 
 @section('content')
-    <div id="blog">
-        {!! $blog->content !!}
-        <div class="mt-10 text-xl">
-            <span>You like it? share to</span>
-            <a href="#" id="share-to-fb-btn" class="link">Facebook</a>
-            or
-            <a class="link"
-                href="https://twitter.com/intent/tweet?text={{$blog->title}}&url={{url(\App\Blog\Blog::blogUrl($blog->slug))}}"
-                target="_blank">
-                Twitter
-            </a>
+    <div id="blog" class="pt-10 bg-gray-200 pb-10 text-base">
+        <div class="px-3 md:px-10 max-w-6xl m-auto">
+            {!! $blog->content !!}
+            <div class="mt-10 border-t pt-5">
+                <span>You like it? share to</span>
+                <a href="#" id="share-to-fb-btn" 
+                    class="link text-gray-600 hover:text-blue-800 mr-2">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a class="link text-gray-600 hover:text-blue-800"
+                    href="https://twitter.com/intent/tweet?text={{$blog->title}}&url={{url(\App\Blog\Blog::blogUrl($blog->slug))}}"
+                    target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
         </div>
     </div>
     <script>
@@ -40,11 +44,4 @@
           }, function(response){});
         }
     </script>
-    <style>
-        p {
-            @apply {
-                leading-10;
-            }
-        }
-    </style>
 @endsection

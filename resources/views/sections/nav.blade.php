@@ -1,6 +1,5 @@
 <nav id="nav">
-    <a href="#" 
-        onclick="toggleHeaderMenu()"
+    <span onclick="toggleHeaderMenu()"
         class="md:hidden">
         <svg id="nav-mobile-show" 
             xmlns="http://www.w3.org/2000/svg" 
@@ -14,7 +13,7 @@
             class="fill-current text-gray-900 h-15 w-6 float-right hidden">
             <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "></polygon>
         </svg>
-    </a>
+    </span>
     <ul class="p-0 float-right hidden md:flex">
         <li class="mr-4 font-bold list-none text-xl md:text-base">
             <a class="text-gray-800 hover:text-blue-800" href="/blogs">BLOG</a>                            

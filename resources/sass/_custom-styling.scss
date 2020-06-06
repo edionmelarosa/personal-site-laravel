@@ -6,10 +6,6 @@
     }
 }
 
-p {
-    @apply leading-10;
-}
-
 strong {
     @apply my-6;
 }
@@ -39,7 +35,7 @@ ul {
 }
 
 img {
-    @apply rounded-md;
+    @apply w-full;
 }
 
 .code-highlight, code {

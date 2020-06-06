@@ -1,11 +1,30 @@
-<footer id="footer" class="mt-20 py-5 px-5 text-center border-t border-gray-300">
-    <div class="max-w-md m-auto">
-        <p>Built with
-            <a class="link" href="https://laravel.com" target="_blank">Laravel</a>
-            ,
-            <a class="link" href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>
-            and
-            <a class="link" href="https://github.com/themsaid/wink" target="_blank">Wink</a>.
-        </p>
+<footer id="footer" 
+    class="mt-5 md:py-10 px-5 text-center border-t border-gray-300 text-gray-600">
+    <div class="md:flex px-6 md:px-10 max-w-6xl m-auto">
+        <div class="md:w-1/2 md:text-left pt-3 sm:mb-5 text-base">
+            &copy; Epiridion Larosa Jr
+        </div>
+        <div class="text-2xl md:w-1/2 md:text-right">
+            <a class="link mr-3 text-gray-600 hover:text-blue-800" 
+                target="_blank" 
+                href="https://twitter.com/edionmelarosa">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="link mr-3 text-gray-600 hover:text-blue-800" 
+                target="_blank" 
+                href="mailto:contact@edionme.com">
+                <i class="far fa-envelope"></i>
+            </a>
+            <a class="link mr-3 text-gray-600 hover:text-blue-800" 
+                target="_blank" 
+                href="https://github.com/edionmelarosa">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="link mr-3 text-gray-600 hover:text-blue-800" 
+                target="_blank" 
+                href="https://www.linkedin.com/in/espiridion-larosa-2a1316a3/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
     </div>
 </footer>

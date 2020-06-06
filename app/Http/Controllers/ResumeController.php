@@ -92,15 +92,23 @@ class ResumeController
         $data['online_accounts'] = [
             [
                 'name' => 'Github',
-                'link' => 'https://github.com/edionmelarosa'
+                'link' => 'https://github.com/edionmelarosa',
+                'icon' => 'fab fa-github'
             ],
             [
                 'name' => 'LinkedIn',
-                'link' => 'https://www.linkedin.com/in/espiridion-larosa-2a1316a3'
+                'link' => 'https://www.linkedin.com/in/espiridion-larosa-2a1316a3',
+                'icon' => 'fab fa-linkedin'
             ],
             [
                 'name' => 'Twitter',
-                'link' => 'https://twitter.com/edionmelarosa'
+                'link' => 'https://twitter.com/edionmelarosa',
+                'icon' => 'fab fa-twitter'
+            ],
+            [
+                'name' => 'Email',
+                'link' => 'mailto:contact@edionme.com',
+                'icon' => 'far fa-envelope'
             ],
         ];
 

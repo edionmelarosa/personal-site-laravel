@@ -22,3 +22,5 @@ mix.sass('resources/sass/app.scss', 'public/css')
     mix.browserSync({
       proxy: process.env.MIX_SENTRY_DSN_PUBLIC
   });
+
+mix.copy('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts')

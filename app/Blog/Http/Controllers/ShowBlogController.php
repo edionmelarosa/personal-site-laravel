@@ -14,6 +14,6 @@ class ShowBlogController
             abort(404);
         }
 
-        return view('pages.blogs.show', compact('blog'));
+        return view('pages.blogShow', compact('blog'));
     }
 }

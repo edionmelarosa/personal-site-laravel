@@ -21,7 +21,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
         <link rel="stylesheet" href="{{mix('css/app.css')}}">
     </head>
-    <body class="font-body bg-gray-100 text-gray-800 text-2xl md:text-xl">
+    <body class="font-body text-gray-700 text-2xl md:text-base border-t-4 border-blue-700">
         <script>
             window.fbAsyncInit = function() {
               FB.init({
@@ -35,7 +35,7 @@
           <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
           <div id="app" class="">
             @include('sections.header')
-            <div class="px-6 md:px-10 max-w-6xl m-auto pt-20 ">
+            <div class="m-auto">
               @yield('content')
             </div>
             @include('sections.footer')

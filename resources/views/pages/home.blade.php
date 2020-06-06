@@ -16,19 +16,69 @@
 @endsection
 
 @section('content')
-    <section id="about">
-        <h1 class="font-bold text-4xl mb-4">Hello!</h1>
-        <p>I am Espiridion Larosa Jr. Freelance Full stack developer from Philippines.</p>
-        <p>For the past 6 years I was working with several private companies. My work is mainly for Web development and little on DevOps if necessary.</p>
-        <p class="mt-10">Now, I want to give it a try in developing Open Source applications and share what I learned from my experiences by posting articles/blogs.</p>
-        <p class="mt-10">I am new to this stuff of creating blogs. If you see wrong information or anything that could bring confusion to readers, please get in touch. </p>
-        <p class="mt-5">
-            You can find me on
-            <a class="link" target="_blank" href="https://twitter.com/edionmelarosa">Twitter</a>
-            ,
-            <a class="link" target="_blank" href="mailto:contact@edionme.com">Email</a>
-            and
-            <a class="link" target="_blank" href="https://github.com/edionmelarosa">Github</a>.
-        </p>
+    <section id="about"
+        class="px-3 md:px-10 max-w-6xl m-auto lg:px-48 pt-10 mb-10 text-xl">
+            <h1 class="font-bold text-4xl mb-4">Hello!</h1>
+            <p>I am Espiridion Larosa Jr. Full stack developer from Philippines.</p>
+            <p>For the past 6 years I was working with several private companies.</p>
+            <p>My work is mainly for Web development and little in DevOps.</p>
+            {{-- <p class="mt-10">Now, I want to give it a try in developing Open Source applications and share what I learned from my experiences by posting articles/blogs.</p> --}}
+            {{-- <p class="mt-10">I am new to this stuff of creating blogs. If you see wrong information or anything that could bring confusion to readers, please get in touch. </p> --}}
+    </section>
+    <section class="blog-section px-3 my-3 bg-gray-200 py-10">
+        <div class="text-center mb-10">
+            <h2 class="font-bold text-xl md:text-4xl mb-0">Recent Posts</h2>
+            <a class="text-blue-700 text-base"
+                href="{{url('blogs')}}"
+            >View All</a>
+        </div>
+        <div class="md:px-10 max-w-6xl m-auto">
+            <div class="md:flex content-center">
+                @foreach($blogs as $key => $blog)
+                    @php
+                        $blog = (object) $blog;
+                        $bgs = [
+                            'bg-blue-700',
+                            'bg-teal-600',
+                            'bg-blue-800',
+                        ]
+                    @endphp
+                    <div class="md:mr-3 bg-white rounded-sm mb-5 shadow-md">
+                        @include('components.blog')
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section px-3 my-3 py-10 bg-blue-800">
+        <div class="text-center mb-10">
+            <h2 class="font-bold md:text-4xl mb-0 mt-0 text-gray-200">Community Posts</h2>
+        </div>
+        <div class="md:px-10 max-w-6xl m-auto">
+            <div class="md:flex content-center">
+                <div class="bg-gray-200 mb-3 md:mr-3 p-6 py-6 rounded-sm shadow-md md:w-2/3 text-center">
+                    <a class="text-gray-800" 
+                        href="https://freek.dev/1676-adding-trycatch-to-laravel-collections" 
+                        target="_blank">
+                        <span class="block hover:text-blue-600">Adding try/catch to Laravel collections</span>
+                    </a>
+                </div>
+                <div class="bg-gray-200 mb-3 md:mr-3 p-6 py-6 rounded-sm shadow-md md:w-2/3 text-center">
+                    <a class="text-gray-800" 
+                    href="https://divinglaravel.com/when-does-php-call-__destruct" 
+                    target="_blank">
+                    <span class="block hover:text-blue-600">When does PHP call __destruct()?</span>
+                    </a>
+                </div>
+                <div class="bg-gray-200 mb-3 md:mr-3 p-6 py-6 rounded-sm shadow-md md:w-2/3 text-center">
+                    <a class="text-gray-800" 
+                        href="https://driesvints.com/blog/the-beauty-of-single-action-controllers/" 
+                        target="_blank">
+                    <span class="block hover:text-blue-600">The Beauty of Single Action Controllers</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection

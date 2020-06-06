@@ -9,7 +9,7 @@ class ShowAllBlogsController
     function __invoke()
     {
         $blogs = Blog::all();
-        
-        return view('pages.blogs.all', compact('blogs'));
+
+        return view('pages.blogAll', compact('blogs'));
     }
 }
