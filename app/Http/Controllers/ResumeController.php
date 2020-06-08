@@ -145,14 +145,14 @@ class ResumeController
 
         $data['projects'] = [
             [
+                'name'        => 'Anchor Text Checker',
+                'link'        => 'https://packagist.org/packages/edionme/anchortextchecker',
+                'description' => 'Package allows to crawl a website and check anchor text and nofollow'
+            ],
+            [
                 'name'        => 'SEO Web App',
                 'link'        => 'http://seobrainess.com/',
                 'description' => 'Web Application that calculates and generates graph base on uploaded data'
-            ],
-            [
-                'name'        => 'Lucky App',
-                'link'        => 'https://polai.xgaminghub.com/',
-                'description' => 'Online dashboard for local gaming platform'
             ]
         ];
 
