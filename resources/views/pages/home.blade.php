@@ -16,16 +16,8 @@
 @endsection
 
 @section('content')
-    <section id="about"
-        class="px-3 md:px-10 max-w-6xl m-auto lg:px-48 pt-10 mb-10 text-xl">
-            <h1 class="font-bold text-4xl mb-4">Hello!</h1>
-            <p>I am Espiridion Larosa Jr. Full stack developer from Philippines.</p>
-            <p>For the past 6 years I was working with several private companies.</p>
-            <p>My work is mainly for Web development and little in DevOps.</p>
-            {{-- <p class="mt-10">Now, I want to give it a try in developing Open Source applications and share what I learned from my experiences by posting articles/blogs.</p> --}}
-            {{-- <p class="mt-10">I am new to this stuff of creating blogs. If you see wrong information or anything that could bring confusion to readers, please get in touch. </p> --}}
-    </section>
-    <section class="blog-section px-3 my-3 bg-gray-200 py-10">
+   @include('components.about')
+    <section class="blog-section px-3 bg-gray-200 py-10">
         <div class="text-center mb-10">
             <h2 class="font-bold text-xl md:text-4xl mb-0">Recent Posts</h2>
             <a class="text-blue-700 text-base"
@@ -51,7 +43,7 @@
         </div>
     </section>
 
-    <section class="blog-section px-3 my-3 py-10 bg-blue-800">
+    <section class="blog-section px-3 py-10 bg-blue-800">
         <div class="text-center mb-10">
             <h2 class="font-bold md:text-4xl mb-0 mt-0 text-gray-200">Community Posts</h2>
         </div>

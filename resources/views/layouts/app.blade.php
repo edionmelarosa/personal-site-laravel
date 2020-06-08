@@ -33,7 +33,7 @@
             };
           </script>
           <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
-          <div id="app" class="">
+          <div id="app" class="relative">
             @include('sections.header')
             <div class="m-auto">
               @yield('content')

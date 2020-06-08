@@ -15,12 +15,7 @@
         </svg>
     </span>
     <ul class="p-0 float-right hidden md:flex">
-        <li class="mr-4 font-bold list-none text-xl md:text-base">
-            <a class="text-gray-800 hover:text-blue-800" href="/blogs">BLOG</a>                            
-        </li>
-        <li class="mr-4 font-bold list-none text-xl md:text-base">
-            <a class="text-gray-800 hover:text-blue-800" href="/resume">RESUME</a>                            
-        </li>
+        @include('components.navLinks')
     </ul>
 </nav>
 <script>
