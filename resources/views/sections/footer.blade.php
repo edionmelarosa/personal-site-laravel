@@ -2,7 +2,7 @@
     class="md:py-10 px-5 text-center border-t border-gray-300 text-gray-600">
     <div class="md:flex px-6 md:px-10 max-w-6xl m-auto">
         <div class="pt-3 text-base md:w-1/2 md:text-left">
-            &copy; Epiridion Larosa Jr
+            &copy; Espiridion Larosa Jr
         </div>
         <div class="text-2xl md:w-1/2 md:text-right">
             <a class="link mr-3 text-gray-600 hover:text-blue-800" 
