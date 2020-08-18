@@ -55,9 +55,11 @@
                             <span class="text-white rounded p-1 text-base">Recent Projects</span>
                         </h2>
                         @foreach ($data->projects as $key => $project)
-                        <p class="mt-2 mb-2 leading-6">
+                        <p class="mt-2 mb-2 leading-6" style="padding-right: 3rem;">
                             <strong class="block">{{$project['name']}}
-                                (<a href="{{$project['link']}}" target="_blank" class="text-sm">visit</a>)
+                                @if (isset($project['link']) && !empty($project['link']))
+                                    (<a href="{{$project['link']}}" target="_blank" class="text-sm">visit</a>)
+                                @endif
                             </strong>
                             {{$project['description']}}
                         </p>

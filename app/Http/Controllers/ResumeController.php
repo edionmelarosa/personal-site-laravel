@@ -113,11 +113,11 @@ class ResumeController
         ];
 
         $data['stacks'] = [
-            'Frontend'   => 'HTML, Css/Sass, TailWindCss/Bootstrap, JavaScript, jQuery, VueJS, Webpack',
-            'Languages'  => 'PHP, Go(limited knowledge)',
-            'Frameworks' => 'Laravel,Symfony(limited knowledge)',
+            'Frontend'   => 'HTML, Css/Sass, TailWindCss/Bootstrap, JavaScript, TypeScript, jQuery, VueJS, ReactJS, Webpack',
+            'Languages'  => 'PHP, Go(limited knowledge), NodeJs',
+            'Frameworks' => 'Laravel,Symfony(limited knowledge), TypeGraphQl, NestJS, GraphQl, MikroORM',
             'CMS'        => 'WordPress',
-            'Database'   => 'MySQL, MongoDB(limited knowledge)',
+            'Database'   => 'MySQL, MongoDB(limited knowledge), Postgresql',
             'DevOps'     => 'Linux server environment, AWS(limited knowledge), Cpanel, Git, Nginx',
             'Testing'    => 'PHPUnit, PestPHP'
         ];
@@ -145,9 +145,8 @@ class ResumeController
 
         $data['projects'] = [
             [
-                'name'        => 'Anchor Text Checker',
-                'link'        => 'https://packagist.org/packages/edionme/anchortextchecker',
-                'description' => 'Package allows to crawl a website and check anchor text and nofollow'
+                'name'        => 'Inerrabit',
+                'description' => 'Jira like clone'
             ],
             [
                 'name'        => 'SEO Web App',
