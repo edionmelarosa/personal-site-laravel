@@ -35,7 +35,7 @@
                             'bg-blue-800',
                         ]
                     @endphp
-                    <div class="md:mr-3 bg-white rounded-sm mb-5 shadow-md">
+                    <div class="md:mr-3 bg-white mb-2 rounded-sm shadow-md md:w-2/3 text-center shadow-md relative">
                         @include('components.blog')
                     </div>
                 @endforeach
