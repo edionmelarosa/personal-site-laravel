@@ -32,6 +32,7 @@
                     <i class="fab fa-twitter"></i>
                 </a>
             </div>
+            <p class="mt-5">If you have questions, don't hesitate to contact me.</p>
         </div>
     </div>
     <script>
