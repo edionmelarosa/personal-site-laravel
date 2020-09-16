@@ -17,7 +17,7 @@
 
 @section('content')
    @include('components.about')
-    <section class="blog-section px-3 bg-gray-200 py-10">
+    <section class="blog-section home-page-blog-section px-3 bg-gray-200 py-10">
         <div class="text-center mb-10">
             <h2 class="font-bold text-xl md:text-4xl mb-0">Recent Posts</h2>
             <a class="text-blue-700 text-base"
