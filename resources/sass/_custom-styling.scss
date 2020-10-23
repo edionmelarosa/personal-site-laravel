@@ -15,7 +15,9 @@ h1 {
 }
 
 h2 {
-    @apply my-10 font-semibold text-2xl;
+    @apply font-semibold text-2xl;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
