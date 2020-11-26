@@ -40,8 +40,8 @@ class Blog
         }
 
         return Cache::rememberForever(Blog::$cacheLimitPrefix . $limit, function () use ($limit) {
-            return WinkPost::limit($limit)
-                ->sortByDesc('created_at');
+            return WinkPost::limit($limit)->get()
+            ->sortByDesc('created_at');
         });
     }
 
