@@ -8,8 +8,7 @@ class HomeController
 {
     function __invoke()
     {
-        $blogs = Blog::all()
-            ->slice(0, 3);
+        $blogs = Blog::limit(6);
 
         return view('pages.home', compact('blogs'));
     }

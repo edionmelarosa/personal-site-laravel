@@ -25,8 +25,9 @@
             >View All</a>
         </div>
         <div class="md:px-10 max-w-6xl m-auto">
+            @foreach ($blogs->split(2) as $blogSlice)
             <div class="md:flex content-center">
-                @foreach($blogs as $key => $blog)
+                @foreach($blogSlice as $key => $blog)
                     @php
                         $blog = (object) $blog;
                         $bgs = [
@@ -35,11 +36,12 @@
                             'bg-blue-800',
                         ]
                     @endphp
-                    <div class="md:mr-3 bg-white mb-2 rounded-sm shadow-md md:w-2/3 text-center shadow-md relative">
+                    <div class="md:mr-3 bg-white mb-2 rounded-sm shadow-md md:w-1/3 text-center shadow-md relative">
                         @include('components.blog')
                     </div>
                 @endforeach
             </div>
+            @endforeach
         </div>
     </section>
 
