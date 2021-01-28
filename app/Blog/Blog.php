@@ -23,7 +23,7 @@ class Blog
         }
 
         return Cache::rememberForever(Blog::$cachePrefix . 'all', function () {
-            return WinkPost::limit(3)
+            return WinkPost::limit(3)->get()
                 ->sortByDesc('created_at');
         });
     }
