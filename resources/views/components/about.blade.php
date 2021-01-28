@@ -12,7 +12,7 @@ class="px-3 md:px-16flex-auto pt-10 mb-5 text-xl">
         <p>I am Espiridion Larosa Jr. Full stack developer from Philippines.</p>
         <p>For the past 6 years I was working with several private companies.</p>
         <p class="mt-3">
-            Aside from development, I love outdoor activities. I do climbing and cycling. My longest ride was 120km.
+            Aside from development, I love outdoor activities.
         </p>
     </div>
 </div>
