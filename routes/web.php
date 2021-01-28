@@ -17,4 +17,3 @@ use App\Http\Controllers\ResumeController;
 
 Route::get('/', HomeController::class);
 Route::get('/resume', ResumeController::class);
-Route::view('/about', 'pages.about');
