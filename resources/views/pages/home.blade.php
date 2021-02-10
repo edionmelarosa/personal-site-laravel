@@ -45,9 +45,9 @@
         </div>
     </section>
 
-    <section class="blog-section px-3 py-10 bg-blue-800">
+    <section class="blog-section px-3 py-10 bg-gray-300">
         <div class="text-center mb-10">
-            <h2 class="font-bold md:text-4xl mb-0 mt-0 text-gray-200">Community Posts</h2>
+            <h2 class="font-bold md:text-4xl mb-0 mt-0">Community Posts</h2>
         </div>
         <div class="md:px-10 max-w-6xl m-auto">
             <div class="md:flex content-center">
@@ -75,4 +75,6 @@
             </div>
         </div>
     </section>
+
+    @include('components.client-reviews')
 @endsection
