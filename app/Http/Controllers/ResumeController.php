@@ -8,6 +8,18 @@ class ResumeController
     {
         $data['experiences'] = [
             [
+                'company'         => 'SkylinedDynamics',
+                'company_address' => 'remote',
+                'position'        => 'API Developer',
+                'department'      => 'Development team',
+                'year'            => '(September) 2020 - present',
+                'work'            => [
+                    'Create API for mobile and web applications',
+                    'Integrate 3rd party APIs',
+                    'As I am a Full Stack developer, I also help in developing our VueJs application'
+                ]
+            ],
+            [
                 'company'         => 'Freelance',
                 'company_address' => 'remote',
                 'position'        => 'Full stack developer',
