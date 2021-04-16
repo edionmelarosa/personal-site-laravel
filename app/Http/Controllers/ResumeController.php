@@ -146,12 +146,17 @@ class ResumeController
         $data['projects'] = [
             [
                 'name'        => 'Inerrabit',
-                'description' => 'Jira like clone'
+                'description' => 'Jira like clone.'
             ],
             [
                 'name'        => 'SEO Web App',
                 'link'        => 'http://seobrainess.com/',
-                'description' => 'Web Application that calculates and generates graph base on uploaded data'
+                'description' => 'Web Application that calculates and generates graph base on uploaded data.'
+            ],
+            [
+                'name'        => 'Keep',
+                'link'        => 'https://github.com/edionmelarosa/keep-api',
+                'description' => 'An API for expense and income tracker.'
             ]
         ];
 
