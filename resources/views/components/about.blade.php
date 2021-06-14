@@ -9,7 +9,7 @@ class="px-3 md:px-16flex-auto pt-10 mb-5 text-xl">
     </div> --}}
     <div class="text-xl px-5 md:pt-4 sm:pt-10">
         <h1 class="font-bold text-4xl mb-4 ">Hello!</h1>
-        <p>I am Dion Larosa a full-stack developer. Currently working at <a href="https://www.skylinedynamics.com/" target="_blank">Skyline Dynamics</a> as senior API developer.</p>
+        <p>I am Dion Larosa a full-stack developer. Currently working at <a href="http://incube8.sg/" target="_blank">incube8.sg</a> as a Senior full-stack software engineer.</p>
     </div>
 </div>
 </section>
